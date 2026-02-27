@@ -1,0 +1,16 @@
+[project]
+name = "meeting-recap"
+version = "0.1.0"
+description = "Meeting recap generator with smart template selection"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+meeting-recap = "meeting_recap.cli:main"
